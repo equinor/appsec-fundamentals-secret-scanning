@@ -1,0 +1,27 @@
+#Code scanning cache
+.dccache
+
+#MSAL Token Cache in examples   
+cache.json
+
+# PPT Temp Files
+~$*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables file
+*.env
+
+# OSX .DS_Store
+*.DS_Store
