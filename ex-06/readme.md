@@ -19,8 +19,9 @@ Let's explore a typical example.
     docker run myapp
     ```
 
-- Container build, no secrets are exposed in log
+- The image is build, no secrets are exposed in build output
 - Let's build again and now pass a secret
+- (A fee hint; if you start commands in bash with a space the command will not be saved in the history)
 
     ```shell
     export MY_SECRET="ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj"
@@ -76,11 +77,19 @@ Let's explore a typical example.
   - Hint: `cat (json file) | jq .`
   - Hint: `tar -tvf (tar file)`
 
+- Looking at the layers with [docker history](https://docs.docker.com/engine/reference/commandline/history/)
+
+    ```shell
+
+    docker history myapp
+    
+    ```
+
+- This command will show the all the layers that make up an image - and the commands that were used to create each layer.
+
 -- Discussions --
 
 - In many cases, using the tool to scan images directly (local or registry, but as early as possible), is the better approach, we took a longer route to explain
 - Be aware of layers and use them "properly" with multi-stage builds
-- The better pattern for using secrets in Docker build would be to use the "--secret" option or mount a secret file using the "--mount=type=secret,id=MY_SECRET" option
+- The better pattern for using secrets in Docker build may be to use the "--secret" option or mount a secret file using the "--mount=type=secret,id=MY_SECRET" option
 - The [Docker Security Best Practices](https://docs.docker.com/develop/security-best-practices/) provide some guidance. Always search product documentation for security best practices.
-
-  
