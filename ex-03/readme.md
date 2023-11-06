@@ -29,7 +29,8 @@ We will use various tools in this exercise. The tools are pre-installed in the d
 
 - In the terminal do the following (from `./ex-03`):
   - `source ../bin/set-snyk-token.sh `
-- Locate the SNYK_TOKEN
+- Locate the `SNYK_TOKEN` environment variable
+  - e.g. `env | grep -i SNYK_TOKEN` 
 - Locate other potential secrets / token in the environment
 
 ### -- Discussion --
