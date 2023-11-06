@@ -45,7 +45,7 @@ Let's explore a typical example.
     ```shell
     trufflehog filesystem ./myapp --no-update
     
-    echo $?
+    echo $? # will show the status code for the last command (0 is ran to completion)
 
     ls myapp/tmp 
     ```

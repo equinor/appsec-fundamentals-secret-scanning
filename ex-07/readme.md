@@ -54,7 +54,11 @@ In this part we will create a new branch, accidentally add a file with a secret 
      ```
 
 - The pre-commit scanning should catch this 👮‍♂️ - you will be stopped before the commit is done. We must disable the pre-commit.
-
+  Temporary solution, circumventing the pre-commit hook:
+  ```shell
+  git commit -m "Adding file" --no-verify
+  ```
+  Permanently, removing pre-commit:
   ```shell
   pre-commit uninstall
   ```
