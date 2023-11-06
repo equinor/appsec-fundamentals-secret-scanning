@@ -30,7 +30,6 @@ Then things could get complicated. Git is distributed, you are not on your own. 
 
 Explore `git filter-repo`:
 
-- git filter-repo
 - [`git filter-repo` man page](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html)
 - [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 

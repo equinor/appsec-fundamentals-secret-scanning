@@ -7,7 +7,7 @@ In this exercise we will warm up and start scanning for secrets. For this exerci
 We will add one secret value to our Codespace. We will use this secret to access Azure Resources. We will add the secret to our repo config so that it is available to all Codespaces for this repo.
 Note you can view your running Codespaces here: [https://github.com/codespaces](https://github.com/codespaces)
 
--- Now You --
+### -- Now You --
 
 - Enter the config section of your workshop repo on the Equinor-Playground
 - Select "Secrets and Variables"
@@ -17,7 +17,7 @@ Note you can view your running Codespaces here: [https://github.com/codespaces](
 - Rebuild the Codespaces container environment (Codespaces menu, bottom left corner)
 - Verify that the secret is available (`env | grep VAULT_ACCESS`)
 
--- Discussion --
+### -- Discussion --
 
 - Do a tiny threat model of this pattern - what could go wrong?
 
@@ -25,16 +25,14 @@ Note you can view your running Codespaces here: [https://github.com/codespaces](
 
 We will use various tools in this exercise. The tools are pre-installed in the development environment. Some need a bit of config to work. One such tools is Snyk. In order for Snyk to work on a non-public repo we need to get a Snyk token. This token is defined as "Service account" for our Snyk test account.
 
-We will use various tools in this exercise. The tools are pre-installed in the development environment. Some need a bit of config to work. One such tools is SNYK. In order for SNYK to work on a non-public repo we need to get a SNYK token. This token is defined as "Service account" for our Snyk test account.
-
--- Now you --
+### -- Now you --
 
 - In the terminal do the following (from `./ex-03`):
   - `source ../bin/set-snyk-token.sh `
 - Locate the SNYK_TOKEN
 - Locate other potential secrets / token in the environment
 
---- Discussion --
+### --- Discussion --
 
 - Do a tiny threat model of this pattern - what could go wrong?
 
@@ -52,7 +50,7 @@ We will create a few secrets in our exercise and scan for these.
 
 Snyk has a SAST (Static Application Security Testing) module, let's try it.
 
--- Now you --
+### -- Now you --
 
 - Assuming you are int he folder `ex-03/src` and that the Snyk token has been acquired for the active terminal session.
 - Do `snyk code test` and explore results
@@ -61,7 +59,7 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
   snyk code test
   ```
 
--- Discussion --
+### -- Discussion --
 
 - Snyk found some secrets in app.py, but not secrets.txt?
 
@@ -69,7 +67,7 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
 
 [Trufflehog](https://github.com/trufflesecurity/trufflehog) is an open source secret scanning tools. It has quite a few options. Let's test it.
 
--- Now you --
+### -- Now you --
 
 - Assuming you are int he folder `ex-03/src` 
 - Do `trufflehog filesystem . --no-update` and explore the results
@@ -84,7 +82,7 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
   trufflehog git file://../.. --no-update
   ```
 
--- Discussions --
+### -- Discussions --
 
 - The first scan (the filesystem) found the secret in the .txt file, but not in the app.py?
 - The second scan (git) scanned the whole git commit history

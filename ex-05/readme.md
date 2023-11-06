@@ -47,8 +47,7 @@ We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework
 - The pre-commit routines are installed per repo. This mean that the initialization will have to be repeated when things are initialized (as with rebuild in our workshop) or installed as part of the initialisation of the environment (we don't implement this in our workshop - it would mess up the flow)
 - The pre-commit framework is pre-installed into your Codespace (part of the [devcontainer.json](../.devcontainer/devcontainer.json))
 
-
--- Now you --
+### -- Now you --
 
 - Explore the `./.pre-commit-config.yaml` file
 - Open a new fresh terminal and keep the one running in `ex-05/src` open.
@@ -71,7 +70,7 @@ We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework
     ```
 - Explore the output
 
--- Discussion --
+### -- Discussion --
 
 - We now have a way to potentially stop secrets being entered into the git history
     - Pros?

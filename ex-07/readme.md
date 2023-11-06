@@ -8,7 +8,7 @@ For this exercise we have defined a github action that will scan for secrets whe
 
 We need to take a few minutes to verify the Github Actions config.
 
--- Now you --
+### -- Now you --
 
 - Explore the workflow at `.github/workflows/secret-scanning.yml`
   - The workflow triggers on "pull_requests"
@@ -20,7 +20,7 @@ We need to take a few minutes to verify the Github Actions config.
   - Add "`trufflesecurity/trufflehog@*,`" to "Allow specified actions .."
   - `Save`
 
---- Discussions ---
+### --- Discussions ---
 
 - Remember; Github actions are code that you "allow" to work with your source code and CI process. It's important to understand what you allow and why. Trust but verify?
 - What would be a good default config for the Github Action in a repo?
@@ -30,7 +30,7 @@ We need to take a few minutes to verify the Github Actions config.
 
 In this part we will create a new branch, accidentally add a file with a secret and then create a PR (pull request).
 
--- Now you --
+### -- Now you --
 
 - Open a terminal and navigate to the `ex-07` folder, create a `src` directory and head into it.
 - Create a new branch named `ex-07`

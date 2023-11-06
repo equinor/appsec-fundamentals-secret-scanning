@@ -7,7 +7,7 @@ Container images are also a **well-known** source for secrets in the wild. There
 
 Let's explore a typical example.
 
--- Now You --
+### -- Now You --
 
 - Assuming you have a terminal open in the folder `ex-06`
 - Explore the `Dockerfile`
@@ -87,7 +87,7 @@ Let's explore a typical example.
 
 - This command will show the all the layers that make up an image - and the commands that were used to create each layer.
 
--- Discussions --
+### -- Discussions --
 
 - In many cases, using the tool to scan images directly (local or registry, but as early as possible), is the better approach, we took a longer route to explain
 - Be aware of layers and use them "properly" with multi-stage builds

@@ -52,10 +52,10 @@ Enhancements we have explored:
 - Adding branch protection requiring PR's, reviews, signed commits and passing checks. Disallow force pushes.
 - Adding a GitHub Action scanning PR's for secrets
   
--- Now you --
+### -- Now you --
 
 - Explore `./bin/set-snyk-token.sh`
 
--- Discussions --
+### -- Discussions --
 
 - How are you managing secrets today? Pros/Cons of current methods.
