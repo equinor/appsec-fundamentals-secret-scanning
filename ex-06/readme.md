@@ -74,7 +74,7 @@ Let's explore a typical example.
 
 - We found a secret, the same one 2 places?
 - Explore the files reported (layers) and identify the secret.
-  - Hint: `cat (json file) | jq .`
+  - Hint: `cat (json file) | jq .`
   - Hint: `tar -tvf (tar file)`
 
 - Looking at the layers with [docker history](https://docs.docker.com/engine/reference/commandline/history/)

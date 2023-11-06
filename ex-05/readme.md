@@ -44,8 +44,8 @@ In this part of the workshop will will explore the git scanning a bit deeper.
 We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework provide quite a few options for plugging in various routines that would run before git events such as commit and push. A few notes:
 
 - Our usage in this workshop is perhaps a bit *unusual*. You would typically use routines from a common or corporate library. We create our own local for our workshop.
-- The pre-commit routines are installed per repo. This mean that the initialization will have to be repated when things are initialized (as with rebuild in our workshop) or installed as part of the initialisation of the environment (we don't implement this in our workshop - it would mess up the flow)
-- The pre-commit framework is pre-installed into your codespace (part of the [devcontainer.json](../.devcontainer/devcontainer.json))
+- The pre-commit routines are installed per repo. This mean that the initialization will have to be repeated when things are initialized (as with rebuild in our workshop) or installed as part of the initialisation of the environment (we don't implement this in our workshop - it would mess up the flow)
+- The pre-commit framework is pre-installed into your Codespace (part of the [devcontainer.json](../.devcontainer/devcontainer.json))
 
 
 -- Now you --
@@ -56,7 +56,7 @@ We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework
     ```shell
     pre-commit install
     ```
-- Open the terminal session thats running `ex-05/src` 
+- Open the terminal session that is running `ex-05/src` 
 - Add the `secret.txt` file to git, and commit to git history
     ```shell
     git add secret.txt

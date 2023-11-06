@@ -1,10 +1,11 @@
 # Let's create secrets and explore a few tools
 
-In this exercise we will warm up and start scanning for secrets. For this exercise you must have a termninal window open and the current directory should be `ex-03` (`cd $CODESPACE_VSCODE_FOLDER`) will take you there)
+In this exercise we will warm up and start scanning for secrets. For this exercise you must have a terminal window open and the current directory should be `ex-03` (`cd $CODESPACE_VSCODE_FOLDER`) will take you there)
 
-## Prepping our codespace environment
+## Prepping our Codespace environment
 
-We will add one secret value to our codespace. We will use this secret to access Azure Resources. We will add the secret to our repo config so that it is available to all Codespaces for this repo.
+We will add one secret value to our Codespace. We will use this secret to access Azure Resources. We will add the secret to our repo config so that it is available to all Codespaces for this repo.
+Note you can view your running Codespaces here: [https://github.com/codespaces](https://github.com/codespaces)
 
 -- Now You --
 
@@ -20,8 +21,9 @@ We will add one secret value to our codespace. We will use this secret to access
 
 - Do a tiny threat model of this pattern - what could go wrong?
 
+## Prepping for Snyk
 
-## Prepping for SNYK
+We will use various tools in this exercise. The tools are pre-installed in the development environment. Some need a bit of config to work. One such tools is Snyk. In order for Snyk to work on a non-public repo we need to get a Snyk token. This token is defined as "Service account" for our Snyk test account.
 
 We will use various tools in this exercise. The tools are pre-installed in the development environment. Some need a bit of config to work. One such tools is SNYK. In order for SNYK to work on a non-public repo we need to get a SNYK token. This token is defined as "Service account" for our Snyk test account.
 
@@ -38,7 +40,7 @@ We will use various tools in this exercise. The tools are pre-installed in the d
 
 ## Adding a few secrets
 
-We will create a few secrets in our excerise and scan for these.
+We will create a few secrets in our exercise and scan for these.
 
 -- Now you ---
 
@@ -48,11 +50,11 @@ We will create a few secrets in our excerise and scan for these.
 
 ## Scanning with Snyk
 
-Snyk has a SATS (Static Application Security Testing) module, let's try it.
+Snyk has a SAST (Static Application Security Testing) module, let's try it.
 
 -- Now you --
 
-- Assuming you are int he folder `ex-03/src` and that the Snyk token has been aquired for the active terminal session.
+- Assuming you are int he folder `ex-03/src` and that the Snyk token has been acquired for the active terminal session.
 - Do `snyk code test` and explore results
 
   ```shell

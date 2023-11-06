@@ -4,7 +4,7 @@ It's time to do some hands-on work. In this part you will create your own versio
 
 ## Now-You
 
-- Verify access to the github orgs
+- Verify access to the GitHub orgs
   - [https://github.com/orgs/equinor/sso](https://github.com/orgs/equinor/sso)
   - [https://github.com/orgs/equinor-playground/sso](https://github.com/orgs/equinor-playground/sso)
 - Navigate to the template repo [https://github.com/equinor/appsec-fundamentals-secret-scanning](https://github.com/equinor/appsec-fundamentals-secret-scanning)

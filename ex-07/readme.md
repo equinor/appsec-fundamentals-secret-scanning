@@ -1,6 +1,6 @@
 # Scanning in the CI
 
-There are many opportunities to scan for secrets in our continious integration (CI). In general, do the scanning as early as possible. We will look at one implementation using github actions.
+There are many opportunities to scan for secrets in our continuous integration (CI). In general, do the scanning as early as possible. We will look at one implementation using github actions.
 
 For this exercise we have defined a github action that will scan for secrets when we do pull requests. Let's dive into the details and get a better idea for the mechanics.
 
@@ -39,7 +39,7 @@ In this part we will create a new branch, accidentally add a file with a secret 
     git checkout -b ex-07
     ```
 
-- Create a security.py file and add a *invalid* github token to it
+- Create a `security.py` file and add a *invalid* github token to it
 
     ```shell
     echo "github_token = 'ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj'" > secret.py
