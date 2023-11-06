@@ -20,7 +20,7 @@ We need to take a few minutes to verify the Github Actions config.
   - Add "`trufflesecurity/trufflehog@*,`" to "Allow specified actions .."
   - `Save`
 
-### --- Discussions ---
+### -- Discussions --
 
 - Remember; Github actions are code that you "allow" to work with your source code and CI process. It's important to understand what you allow and why. Trust but verify?
 - What would be a good default config for the Github Action in a repo?
@@ -82,7 +82,7 @@ In this part we will create a new branch, accidentally add a file with a secret 
 - Explore [Events that triggers workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) on github.com
 - Explore [About branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) on github.com
 
--- Discussions --
+### -- Discussions --
 
 - What are the benefit of "branch protection"?
 - What would a *good* branch protection rule be?

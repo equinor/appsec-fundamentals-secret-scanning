@@ -4,7 +4,7 @@ Our Software Development Life Cycle (SDLC) can be quite complex. This is one exa
 
 ![Example SLDC](./tm-example-sdlc-real.png)
 
--- Discussions --
+### -- Discussions --
 
 - We typically use secrets all over the SDLC and should treat them carefully
 - Where does it make sense to scan?

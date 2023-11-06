@@ -32,7 +32,7 @@ We will use various tools in this exercise. The tools are pre-installed in the d
 - Locate the SNYK_TOKEN
 - Locate other potential secrets / token in the environment
 
-### --- Discussion --
+### -- Discussion --
 
 - Do a tiny threat model of this pattern - what could go wrong?
 
@@ -40,7 +40,7 @@ We will use various tools in this exercise. The tools are pre-installed in the d
 
 We will create a few secrets in our exercise and scan for these.
 
--- Now you ---
+### -- Now you ---
 
 - Explore the files in `ex-03/src`
 - `secret.txt`
