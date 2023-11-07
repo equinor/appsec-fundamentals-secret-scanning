@@ -25,7 +25,7 @@ For this workshop we:
 
 - Delete client-secret for SP
 - Consider deleting infrastructure
-  - Service Pincipal
+  - Service Principal
   - Azure Key Vault
   - Azure Resource Group
   - Snyk Organization
