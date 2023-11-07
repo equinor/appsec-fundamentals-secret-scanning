@@ -1,6 +1,6 @@
 # Scanning in the CI
 
-There are many opportunities to scan for secrets in our continious integration (CI). In general, do the scanning as early as possible. We will look at one implementation using github actions.
+There are many opportunities to scan for secrets in our continuous integration (CI). In general, do the scanning as early as possible. We will look at one implementation using github actions.
 
 For this exercise we have defined a github action that will scan for secrets when we do pull requests. Let's dive into the details and get a better idea for the mechanics.
 
@@ -8,7 +8,7 @@ For this exercise we have defined a github action that will scan for secrets whe
 
 We need to take a few minutes to verify the Github Actions config.
 
--- Now you --
+### -- Now you --
 
 - Explore the workflow at `.github/workflows/secret-scanning.yml`
   - The workflow triggers on "pull_requests"
@@ -20,7 +20,7 @@ We need to take a few minutes to verify the Github Actions config.
   - Add "`trufflesecurity/trufflehog@*,`" to "Allow specified actions .."
   - `Save`
 
---- Discussions ---
+### -- Discussions --
 
 - Remember; Github actions are code that you "allow" to work with your source code and CI process. It's important to understand what you allow and why. Trust but verify?
 - What would be a good default config for the Github Action in a repo?
@@ -30,7 +30,7 @@ We need to take a few minutes to verify the Github Actions config.
 
 In this part we will create a new branch, accidentally add a file with a secret and then create a PR (pull request).
 
--- Now you --
+### -- Now you --
 
 - Open a terminal and navigate to the `ex-07` folder, create a `src` directory and head into it.
 - Create a new branch named `ex-07`
@@ -39,7 +39,7 @@ In this part we will create a new branch, accidentally add a file with a secret 
     git checkout -b ex-07
     ```
 
-- Create a security.py file and add a *invalid* github token to it
+- Create a `security.py` file and add a *invalid* github token to it
 
     ```shell
     echo "github_token = 'ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj'" > secret.py
@@ -54,7 +54,11 @@ In this part we will create a new branch, accidentally add a file with a secret 
      ```
 
 - The pre-commit scanning should catch this 👮‍♂️ - you will be stopped before the commit is done. We must disable the pre-commit.
-
+  Temporary solution, circumventing the pre-commit hook:
+  ```shell
+  git commit -m "Adding file" --no-verify
+  ```
+  Permanently, removing pre-commit:
   ```shell
   pre-commit uninstall
   ```
@@ -78,7 +82,7 @@ In this part we will create a new branch, accidentally add a file with a secret 
 - Explore [Events that triggers workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) on github.com
 - Explore [About branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches) on github.com
 
--- Discussions --
+### -- Discussions --
 
 - What are the benefit of "branch protection"?
 - What would a *good* branch protection rule be?

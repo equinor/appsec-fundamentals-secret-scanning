@@ -9,14 +9,14 @@ Now that we have a better idea on risks we hopefully can make better and more in
 - Using password/credential managers
 - Using keychain services
 - Storing secrets in encrypted files
-- Storing secrets in .env files
+- Storing secrets in `.env` files
 - Storing secrets in secret management tools (like Azure Key Vault)
 - Injecting secrets into environment variables
 
 ## A few *known* controls could be
 
-- Using .gitignore
-- Using .dockerignore
+- Using `.gitignore`
+- Using `.dockerignore`
 - Using secret scanners
   - Not all tools are equal
 - Limit access to secrets
@@ -24,7 +24,7 @@ Now that we have a better idea on risks we hopefully can make better and more in
 - Rotate secrets often, automate!
 - Auditing and logging
 - Educating and training are smart
-- `Threat modelling your SDLC with your team is even smarter!`
+- **Threat modelling your SDLC with your team is even smarter!**
 
 ## What we should NOT do
 
@@ -50,12 +50,12 @@ Enhancements we have explored:
 - Adding Snyk Code into our IDE (it could pick up some secret issues early)
 - Adding pre-commit with Trufflehog locally
 - Adding branch protection requiring PR's, reviews, signed commits and passing checks. Disallow force pushes.
-- Adding a Gitub Action scanning PR's for secrets
+- Adding a GitHub Action scanning PR's for secrets
   
--- Now you --
+### -- Now you --
 
 - Explore `./bin/set-snyk-token.sh`
 
--- Discussions --
+### -- Discussions --
 
 - How are you managing secrets today? Pros/Cons of current methods.

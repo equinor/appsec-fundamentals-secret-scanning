@@ -7,7 +7,7 @@ Container images are also a **well-known** source for secrets in the wild. There
 
 Let's explore a typical example.
 
--- Now You --
+### -- Now You --
 
 - Assuming you have a terminal open in the folder `ex-06`
 - Explore the `Dockerfile`
@@ -45,7 +45,7 @@ Let's explore a typical example.
     ```shell
     trufflehog filesystem ./myapp --no-update
     
-    echo $?
+    echo $? # will show the status code for the last command (0 is ran to completion)
 
     ls myapp/tmp 
     ```
@@ -74,7 +74,7 @@ Let's explore a typical example.
 
 - We found a secret, the same one 2 places?
 - Explore the files reported (layers) and identify the secret.
-  - Hint: `cat (json file) | jq .`
+  - Hint: `cat (json file) | jq .`
   - Hint: `tar -tvf (tar file)`
 
 - Looking at the layers with [docker history](https://docs.docker.com/engine/reference/commandline/history/)
@@ -87,7 +87,7 @@ Let's explore a typical example.
 
 - This command will show the all the layers that make up an image - and the commands that were used to create each layer.
 
--- Discussions --
+### -- Discussions --
 
 - In many cases, using the tool to scan images directly (local or registry, but as early as possible), is the better approach, we took a longer route to explain
 - Be aware of layers and use them "properly" with multi-stage builds
