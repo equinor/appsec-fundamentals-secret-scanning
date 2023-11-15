@@ -25,9 +25,7 @@
 		}
 	},
 	"updateContentCommand": {
-		"trufflehog" : "curl -L https://github.com/trufflesecurity/trufflehog/releases/download/v3.61.0/trufflehog_3.61.0_linux_amd64.tar.gz| tar -xz -C /tmp/ && sudo mv /tmp/trufflehog /usr/local/bin/",
-		"postCreateCommand": "sed -i 's/ZSH_THEME=\"devcontainers\"/ZSH_THEME=\"avit\"/g' ~/.zshrc && source ~/.zshrc"
-
+		"trufflehog" : "curl -L https://github.com/trufflesecurity/trufflehog/releases/download/v3.61.0/trufflehog_3.61.0_linux_amd64.tar.gz| tar -xz -C /tmp/ && sudo mv /tmp/trufflehog /usr/local/bin/"
 	},
 	"containerEnv": {
 		"PIPELINE": "development"
