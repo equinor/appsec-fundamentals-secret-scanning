@@ -17,8 +17,8 @@
 			],
 			"settings": {
 				"gitlens.showWelcomeOnInstall" :false,
-				"terminal.integrated.shell.linux": "/usr/bin/zsh"
-
+				"terminal.integrated.shell.linux": "/usr/bin/zsh",
+				"terminal.integrated.defaultProfile.linux": "zsh"
 			}
 		},
 		"codespaces": {
