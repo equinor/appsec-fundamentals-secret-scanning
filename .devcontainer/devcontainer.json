@@ -22,8 +22,7 @@
 			}
 		},
 		"codespaces": {
-			"openFiles": [""],
-			
+			"openFiles": [""]
 		}
 	},
 	"updateContentCommand": {
