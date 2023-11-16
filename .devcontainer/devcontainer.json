@@ -29,7 +29,7 @@
 	},
 	"postCreateCommand":
 			[
-				"sh -c \"sed -i 's/ZSH_THEME=\\\"devcontainers\\\"/ZSH_THEME=\\\"avit\\\"/g' ~/.zshrc\""
+				"sed -i 's/ZSH_THEME=\\\"devcontainers\\\"/ZSH_THEME=\\\"avit\\\"/g' ~/.zshrc"
 			],
 		
 	"containerEnv": {
