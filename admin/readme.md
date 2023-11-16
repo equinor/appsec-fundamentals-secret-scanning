@@ -9,9 +9,9 @@
   - Store the Client Secret for sharing with participants.
   - Update the CodeSpace Repository Secret `VAULT_ACCESS`.
 - Create a Key Vault
-  - Course instructors should have the role "Key Vault Secret Officer".
-  - The SP created in the previous step should have the role "Key Vault Secret User".
-- Create/use a Snyk Organization in the "Equinor Test" group.
+  - Course instructors should have the role "Key Vault Secret Officer" on the key vault.
+  - The SP created in the previous step should have the role "Key Vault Secret User" on the secret.
+- Create/use a Snyk Organization in the "Test" group.
   - Create a Service Account in this group.
   - Inject the service account "value" into the Key Vault as a Secret named `SNYK`.
 - Update the `bin/config/development.cfg` file.
