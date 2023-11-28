@@ -19,7 +19,7 @@ Stats from ([Gitguardian, Report on Secrets Sprawl 2023](https://www.gitguardian
 - Toyota, October 2022, Secret key exposed on Github.com, customer data exposed ([link](https://blog.gitguardian.com/toyota-accidently-exposed-a-secret-key-publicly-on-github-for-five-years/))
 - Private source code was stolen/leaked from NVidia, Samsung, Microsoft, DropBox and Slack in 2022
   
-And a few weeks ago:
+And a few months ago:
 
 - August 2023, [Graphana Private Signing key](https://grafana.com/blog/2023/08/24/grafana-security-update-gpg-signing-key-rotation/)
 - September 2023, [Microsoft Signing Key](https://msrc.microsoft.com/blog/2023/09/results-of-major-technical-investigations-for-storm-0558-key-acquisition/)

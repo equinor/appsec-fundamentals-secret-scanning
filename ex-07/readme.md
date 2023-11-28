@@ -84,5 +84,5 @@ In this part we will create a new branch, accidentally add a file with a secret 
 
 ### -- Discussions --
 
-- What are the benefit of "branch protection"?
+- What are the benefits of "branch protection"?
 - What would a *good* branch protection rule be?
