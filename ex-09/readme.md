@@ -12,28 +12,4 @@ We will, or someone - not we, will always mess up. So be prepared, both as a ind
 - Potentially inspect logs
 - Do a retrospective with your team
 
-## Cleaning the git history
-
-This part can be very easy to super hard, it all depends on what and where. (You will find a lot of hard learnt lessons at [https://dangitgit.com](https://dangitgit.com))
-
-### You are working locally, the secret is in the last commit, not pushed
-
-- The secret is the only file in the last commit
-  - Consider dropping the last commit, doing a `git reset --hard HEAD~1`
-- The secret is not the only file in the last commit
-  - Consider altering files and then amend the last commit
-    - `git add [files]; git commit --amend`
-
-### You are working locally, the secret is beyond the last commit
-
-Then things could get complicated. Git is distributed, you are not on your own. Rewriting the history could lead to all sorts of issues
-
-Explore `git filter-repo`:
-
-- [`git filter-repo` man page](https://htmlpreview.github.io/?https://github.com/newren/git-filter-repo/blob/docs/html/git-filter-repo.html)
-- [Removing sensitive data from a repository](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
-
-Be aware of:
-
-- You may need to coordinate with your team
-- Force push is powerful, use carefully
+- You can find more info in the [Secret Scanning Guidelines](https://appsec.equinor.com/guidelines/secret-scanning/#what-to-do-when-we-have-messed-up)

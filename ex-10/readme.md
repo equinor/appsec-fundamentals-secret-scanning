@@ -30,7 +30,7 @@ Please
 - join [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) on Slack if you're not already part of the community.
 - bookmark [https://appsec.equinor.com](https://appsec.equinor.com)
 - share from your personal/team's journey with the developer community on #appsec (what made things useful, good pattern, bad patterns, issues etc ...)
-- give us feedback, there are always room for improvements. DM on Slack or email is fine.
+- give us feedback, there is always room for improvements. DM on Slack or email is fine.
 
 ## Last last words
 
