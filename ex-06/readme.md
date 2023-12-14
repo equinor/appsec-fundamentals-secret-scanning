@@ -21,7 +21,7 @@ Let's explore a typical example.
 
 - The image is build, no secrets are exposed in build output
 - Let's build again and now pass a secret
-- (A fee hint; if you start commands in bash with a space the command will not be saved in the history)
+- (A free hint; if you start commands in bash with a space the command will not be saved in the history)
 
     ```shell
     export MY_SECRET="ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj"
@@ -50,7 +50,7 @@ Let's explore a typical example.
     ls myapp/tmp 
     ```
 
-- The scan gives some error we can ignore, but finds no secrets (exit code 0). There is no /tmp/secret.txt, it's deleted ...
+- The scan gives some errors we can ignore, but finds no secrets (exit code 0). There is no /tmp/secret.txt, it's deleted ...
 - The previous build was not a real container image. Let's build a real image, save it to a tar file and investigate
 
     ```shell
@@ -65,7 +65,7 @@ Let's explore a typical example.
     ls -la ./myapp-tar
     ```
 
-- The content of `myapp-tar` looks different than what's in `myapp`. It's represents whats end up in the container image, all layers.
+- The content of `myapp-tar` looks different than what's in `myapp`. It represents what ends up in the container image, all layers.
 - Let us scan the result with Trufflehog
 
     ```shell
