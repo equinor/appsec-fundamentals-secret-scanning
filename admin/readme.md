@@ -44,6 +44,7 @@ For this workshop, we:
 
 ## During Workshop
 
+- Introduce yourself!
 - Using "raising hands" works well as a tool for progress management.
 - For the 3-hour version, we take breaks on the hour (10 and 5 minutes).
 - Collecting feedback using polls or similar can be a good idea.

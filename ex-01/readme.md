@@ -23,6 +23,7 @@ And a few months ago:
 
 - August 2023, [Graphana Private Signing key](https://grafana.com/blog/2023/08/24/grafana-security-update-gpg-signing-key-rotation/)
 - September 2023, [Microsoft Signing Key](https://msrc.microsoft.com/blog/2023/09/results-of-major-technical-investigations-for-storm-0558-key-acquisition/)
+- December 2023, [Exposed tokens on Hugging Face](https://www.darkreading.com/vulnerabilities-threats/meta-ai-models-cracked-open-exposed-api-tokens)
 
 And we do security research in Equinor as well:
 
