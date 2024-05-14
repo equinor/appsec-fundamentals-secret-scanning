@@ -83,6 +83,12 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
   trufflehog git file://../.. --no-update
   ```
 
+- Explore Trufflehog options
+
+  ```shell
+  trufflehog --help
+  ```
+
 ### -- Discussions --
 
 - The first scan (the filesystem) found the secret in the .txt file, but not in the app.py?
