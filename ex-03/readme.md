@@ -9,13 +9,19 @@ Note you can view your running Codespaces here: [https://github.com/codespaces](
 
 ### -- Now You --
 
+- Make sure you have the codespace available and a terminal window open at `ex-03`
 - Enter the config section of your workshop repo on the Equinor-Playground
 - Select "Secrets and Variables"
 - Select "Codespaces"
 - Add a new "Repository Secret" named `VAULT_ACCESS`
 - Add the secret value `provided by the instructor`
-- Rebuild the Codespaces container environment (Codespaces menu, bottom left corner)
-- Verify that the secret is available (`env | grep VAULT_ACCESS`)
+- Switch back to the codespace
+  - A message should show that the environment has changed and offer to reload
+- Verify that the secret is available in the terminal (`env | grep VAULT_ACCESS`)
+  - If not, try to manually re-load the browser window
+  - If not, rebuilding the  the codespace container environment should fix it but will take time (Codespaces menu, bottom left corner)
+  - If not, adding the VAULT_ACCESS environment variable manually will work for this exercise
+    - (` export VAULT_ACCESS=<paste value>`) (The leading white space is intentional, the command will not enter the command history)
 
 ### -- Discussion --
 
