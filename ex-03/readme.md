@@ -94,8 +94,39 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
 - The first scan (the filesystem) found the secret in the .txt file, but not in the app.py?
 - The second scan (git) scanned the whole git commit history
 
+## Secret verification
+
+Many tools have will try to *verify* if a secret is valid. The verification part involves using the secret against the service which the scanner believes it is for. In Trufflehog this is default if the detectors that supports it. For the example of the GitHub token, Trufflehog's [detector](https://github.com/trufflesecurity/trufflehog/blob/0d8c3335ed9321c2e198206f9279a31c8f2e3b67/pkg/detectors/github/v1/github_old.go#L109) will hit the github api using the secret. If the api call is successfull Trufflehog will report "Verified" - else "Found unverified result 🐷🔑❓"
+
+(In the current version, `snyk code test` will send your data away for analysis)
+
+### -- Now You --
+
+- Assuming you are int he folder `ex-03/src` 
+- Do `trufflehog filesystem . --no-update` and explore the results
+
+  ```shell
+  trufflehog filesystem . --no-update
+  ```
+- Do `trufflehog filesystem . --no-update --no-verification` and explore the results
+
+  ```shell
+  trufflehog filesystem . --no-update --no-verification
+  ```
+- Do `trufflehog filesystem . --no-update --only-verified` and explore the results
+
+  ```shell
+  trufflehog filesystem . --no-update --only-verified
+  ```
+
+### -- Discussions --
+
+- Take a deliberate decision on "verification" and what data that is sendt out of your system
+- What could go wrong? (Expose data in http headers, test secret with wrong vendor, should we treat all secrets that has undergone a verification as exposed?)
+
 ## Take away
 
-- Secrets are "everywhere" in our dev environment  - it's *easy* for them to slip and be exposed
-- Not all tools are equal, they have different purposes and opportunities. The tools are under constant development and improvement
-- Use more than one tool in your SDLC
+- Secrets are "everywhere" in our development environment—it's *easy* for them to slip and be exposed.
+- Not all tools are equal; they serve different purposes and offer various opportunities. These tools are under constant development and improvement.
+- Use more than one tool in your SDLC.
+- Be aware of the data that leaves your control for scanning, verification, and similar processes.
