@@ -12,6 +12,13 @@ Nope - This workshop has more or less provided a `happy-path` intro. You should 
 
 There are several tools out there. Currently we focus on the open source versions. 
 
+## Free Github Secret Scanning and Push Protection for "public" repositories
+
+- Please note that Github have a free [secret scanning feature](https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning) available for **public** repos
+- This includes an option for "push_protection" that will stop push events that contanins a secret
+- We recommend that teams read up on this feature, the [patterns](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns) it support, and enable it for their public repos
+
+
 ## We are done
 
 Now you
