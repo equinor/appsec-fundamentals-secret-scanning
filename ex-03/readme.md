@@ -130,9 +130,48 @@ Many tools have will try to *verify* if a secret is valid. The verification part
 - Take a deliberate decision on "verification" and what data that is sendt out of your system
 - What could go wrong? (Expose data in http headers, test secret with wrong vendor, should we treat all secrets that has undergone a verification as exposed?)
 
-## Take away
+## Fine-tuning
+
+Most secret scanning tools will report quite a few false positives, and Trufflehog is no exception. It supports over 813 detectors, so false positives are to be expected. Tuning the scanners to meet your specific needs is often necessary.
+
+### -- Now You ---
+
+- Assuming you are int he folder `ex-03/src` 
+- We will install the dependencies for a tiny NodeJS project. Run the install command.
+
+  ```shell
+  npm install
+  ```
+- Use Trufflehog to scan for secrets
+
+  ```shell
+  trufflehog filesystem . --no-update --no-verification
+  ```
+- Examine the resuls and the detectors that are triggered.
+- Our first strategy will be to exclude detectors that we do not think is relevant for our project, start with "URI"
+
+  ```shell
+  trufflehog filesystem . --no-update --no-verification --exclude-detectors=URI
+  ```
+- For our example this worked, we are left with the known Github token. Detectors can either be included or excluded.
+- For our example, it does "not make sense" to scan the "node_modules" directory. We will focus on our code and tell Trufflehog to ignore the NodeJS dependencies
+- Examine the "trufflehog-exclude-dirs.txt" file and the use it with Trufflehog
+
+  ```shell
+  trufflehog filesystem . --no-update --no-verification --exclude-paths=./trufflehog-exclude-dirs.txt
+  ```
+- For our example this worked out fine. We are back to the Github token that we know.
+
+### -- Discussions ---
+
+- Secret scanners usually need to be fine-tuned.
+- The more "detectors" a tool has, the larger the number of false positives.
+- Take deliberate and conscious action on what to include or exclude.
+
+## Takeaways
 
 - Secrets are "everywhere" in our development environment—it's *easy* for them to slip and be exposed.
 - Not all tools are equal; they serve different purposes and offer various opportunities. These tools are under constant development and improvement.
 - Use more than one tool in your SDLC.
+- Fine-tune scanners to reduce number of false positives
 - Be aware of the data that leaves your control for scanning, verification, and similar processes.
