@@ -29,7 +29,7 @@ Note you can view your running Codespaces here: [https://github.com/codespaces](
 
 ## Prepping for Snyk
 
-We will use various tools in this exercise. The tools are pre-installed in the development environment. Some need a bit of config to work. One such tools is Snyk. In order for Snyk to work on a non-public repo we need to get a Snyk token. This token is defined as "Service account" for our Snyk test account.
+We will utilize a range of tools in this exercise, all of which are pre-installed in the development environment. However, some require additional configuration to function properly. A prime example is Snyk and the Snyk Command Line Interface (CLI). To enable Snyk to operate on a non-public repository, such as the one we will create on the Equinor Playground, we need to acquire a Snyk token. This token will authenticate the CLI with the Snyk platform. Specifically, the token is designated as a "Service Account" for the Snyk Organization that we have established for this workshop.
 
 ### -- Now you --
 
@@ -104,7 +104,7 @@ Snyk has a SAST (Static Application Security Testing) module, let's try it.
 
 Many tools have will try to *verify* if a secret is valid. The verification part involves using the secret against the service which the scanner believes it is for. In Trufflehog this is default if the detectors that supports it. For the example of the GitHub token, Trufflehog's [detector](https://github.com/trufflesecurity/trufflehog/blob/0d8c3335ed9321c2e198206f9279a31c8f2e3b67/pkg/detectors/github/v1/github_old.go#L109) will hit the github api using the secret. If the api call is successfull Trufflehog will report "Verified" - else "Found unverified result 🐷🔑❓"
 
-(In the current version, `snyk code test` will send your data away for analysis)
+(In the current version, `snyk code test` will send your data away for analysis. There is a ["local engine"](https://docs.snyk.io:8443/scan-using-snyk/snyk-code/snyk-code-local-engine) version in early access which will not send data away)
 
 ### -- Now You --
 
@@ -132,7 +132,7 @@ Many tools have will try to *verify* if a secret is valid. The verification part
 
 ## Fine-tuning
 
-Most secret scanning tools will report quite a few false positives, and Trufflehog is no exception. It supports over 813 detectors, so false positives are to be expected. Tuning the scanners to meet your specific needs is often necessary.
+Most secret scanning tools will report quite a few false positives, and Trufflehog is no exception. It supports over 810+ detectors, where most of them are defined by [regular expressions](https://en.wikipedia.org/wiki/Regular_expression), so false positives are to be expected. Tuning the scanners to meet your specific needs is often necessary.
 
 ### -- Now You ---
 
@@ -170,7 +170,7 @@ Most secret scanning tools will report quite a few false positives, and Truffleh
 
 ## Takeaways
 
-- Secrets are "everywhere" in our development environment—it's *easy* for them to slip and be exposed.
+- Secrets are "everywhere" in our development environment — it's *easy* for them to slip and be exposed.
 - Not all tools are equal; they serve different purposes and offer various opportunities. These tools are under constant development and improvement.
 - Use more than one tool in your SDLC.
 - Fine-tune scanners to reduce number of false positives
