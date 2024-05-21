@@ -19,11 +19,11 @@ In this part of the workshop will will explore the git scanning a bit deeper.
     ```
 - Scan the file system, secret found?
     ```shell
-   trufflehog filesystem . --no-update
+   trufflehog filesystem . --no-update --no-verification
     ```
 - Scan git from HEAD, secret found?
     ```shell
-    trufflehog git file://../../ --no-update --since-commit HEAD
+    trufflehog git file://../../ --no-update --no-verification --since-commit HEAD
     ```
 - Start tracking the secret.txt file in git
     ```shell
@@ -32,7 +32,7 @@ In this part of the workshop will will explore the git scanning a bit deeper.
     ```
 - Scan git from HEAD, secret found?
     ```shell
-    trufflehog git file://../../ --no-update --since-commit HEAD
+    trufflehog git file://../../ --no-update --no-verification --since-commit HEAD
     ```
 - Explore Trufflehog git options
     ```shell
@@ -55,7 +55,7 @@ We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework
     ```shell
     pre-commit install
     ```
-- Open the terminal session that is running `ex-05/src` 
+- Go back to the terminal session that is running `ex-05/src` 
 - Add the `secret.txt` file to git, and commit to git history
     ```shell
     git add secret.txt

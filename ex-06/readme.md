@@ -43,7 +43,7 @@ Let's explore a typical example.
 - Let's scan the `my-app` for any secrets
 
     ```shell
-    trufflehog filesystem ./myapp --no-update
+    trufflehog filesystem ./myapp --no-update --no-verification
     
     echo $? # will show the status code for the last command (0 is ran to completion)
 
@@ -69,7 +69,7 @@ Let's explore a typical example.
 - Let us scan the result with Trufflehog
 
     ```shell
-    trufflehog filesystem ./myapp-tar --no-update
+    trufflehog filesystem ./myapp-tar --no-update --no-verification
     ```
 
 - We found a secret, the same one 2 places?

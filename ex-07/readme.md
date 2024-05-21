@@ -63,7 +63,7 @@ In this part we will create a new branch, accidentally add a file with a secret 
   pre-commit uninstall
   ```
 
-- Continue the commit and then push to origin
+- Continue with the commit and then push to origin (you may omit the git commit step if you used the temporary solution)
 
     ```shell
     git status
