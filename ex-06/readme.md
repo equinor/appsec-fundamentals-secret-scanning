@@ -15,7 +15,8 @@ Let's explore a typical example.
   
     ```shell
     docker build -t myapp . --progress=plain --no-cache
-    
+    ```
+    ```shell    
     docker run myapp
     ```
 
@@ -24,8 +25,9 @@ Let's explore a typical example.
 - (A free hint; if you start commands in bash with a space the command will not be saved in the history)
 
     ```shell
-    export MY_SECRET="ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj"
-    
+     export MY_SECRET="ghp_6GdlOSDwyZKlhSyuuuEEEJJ8yLxRNQ3UnVAj"
+    ```
+    ```shell    
     docker build -t myapp . --progress=plain --no-cache --build-arg MY_SECRET=$MY_SECRET
     ```
 
@@ -35,7 +37,8 @@ Let's explore a typical example.
 
     ```shell
     mkdir myapp
-
+    ```
+    ```shell
     docker build --build-arg MY_SECRET=${MY_SECRET} -t myapp --progress=plain --no-cache -o type=local,dest=./myapp .
     ```
 
@@ -44,9 +47,11 @@ Let's explore a typical example.
 
     ```shell
     trufflehog filesystem ./myapp --no-update --no-verification
-    
+    ```
+    ```shell    
     echo $? # will show the status code for the last command (0 is ran to completion)
-
+    ```
+    ```shell
     ls myapp/tmp 
     ```
 
@@ -55,13 +60,17 @@ Let's explore a typical example.
 
     ```shell
     mkdir myapp-tar
-
+    ```
+    ```shell
     docker build --build-arg MY_SECRET=${MY_SECRET} -t myapp --progress=plain --no-cache .
-    
+    ```
+    ```shell    
     docker save -o myapp.tar myapp
-    
+    ```
+    ```shell    
     tar -xvf myapp.tar -C myapp-tar
-    
+    ```
+    ```shell    
     ls -la ./myapp-tar
     ```
 
