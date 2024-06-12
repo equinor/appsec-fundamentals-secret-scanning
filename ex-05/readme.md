@@ -46,6 +46,7 @@ We are using the [Pre-Commit](https://pre-commit.com/) framework. This framework
 - Our usage in this workshop is perhaps a bit *unusual*. You would typically use routines from a common or corporate library. We create our own local for our workshop.
 - The pre-commit routines are installed per repo. This mean that the initialization will have to be repeated when things are initialized (as with rebuild in our workshop) or installed as part of the initialisation of the environment (we don't implement this in our workshop - it would mess up the flow)
 - The pre-commit framework is pre-installed into your Codespace (part of the [devcontainer.json](../.devcontainer/devcontainer.json))
+- Should you need to install pre-commit _locally_, [follow the official installation guides](https://pre-commit.com/#install)
 
 ### -- Now you --
 
