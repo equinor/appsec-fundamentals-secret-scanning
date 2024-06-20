@@ -23,6 +23,10 @@ Note you can view your running Codespaces here: [https://github.com/codespaces](
   - If not, adding the VAULT_ACCESS environment variable manually will work for this exercise
     - (` export VAULT_ACCESS=<paste value>`) (The leading white space is intentional, the command will not enter the command history)
 
+
+The following illustration shows the setup that has just been configured.
+![Flow](assets/flow.png)
+
 ### -- Discussion --
 
 - Do a tiny threat model of this pattern - what could go wrong?
