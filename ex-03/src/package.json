@@ -15,6 +15,6 @@
         "@azure/msal-node": "^2.13.1"
     },
     "devDependencies": {
-        "tap": "^18.6.1"
+        "tap": "^21.0.1"
     }
 }
