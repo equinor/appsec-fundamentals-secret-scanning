@@ -1,6 +1,6 @@
 # Let's create secrets and explore a few tools
 
-In this exercise we will warm up and start scanning for secrets. For this exercise you must have a terminal window open and the current directory should be `ex-03` (`cd $CODESPACE_VSCODE_FOLDER`) will take you there)
+In this exercise we will warm up and start scanning for secrets. For this exercise you must have a terminal window open and the current directory should be `ex-03` (`cd $CODESPACE_VSCODE_FOLDER/ex-03`) will take you there)
 
 ## Prepping our Codespace environment
 
