@@ -16,7 +16,7 @@ Stats from ([GitGuardian, Report on Secrets Sprawl 2024](https://www.gitguardian
 
 ## Some recent examples
 
-- Mercedes-Benz, 2024, mistakenly published password exposed Mercedes-Benz source code ([link](https://techcrunch.com/2024/01/26/mercedez-benz-token-exposed-source-code-github/))
+- Mercedes-Benz, 2024, mistakenly published GitHub token exposed Mercedes-Benz source code ([link](https://techcrunch.com/2024/01/26/mercedez-benz-token-exposed-source-code-github/))
 - Meta AI, late 2023, AI models cracked open with exposed API tokens (GitHub, Hugging Face) ([link](https://www.darkreading.com/vulnerabilities-threats/meta-ai-models-cracked-open-exposed-api-tokens))
 - Verizon 2023 DBIR (Data Breaches Investigation Report), 16.3k incidents examined, 74% involves human element, 86% of basic web attacks involves stolen credentials ([link](https://www.verizon.com/business/resources/reports/dbir/))
 - September 2023, [Microsoft Signing Key](https://msrc.microsoft.com/blog/2023/09/results-of-major-technical-investigations-for-storm-0558-key-acquisition/)
