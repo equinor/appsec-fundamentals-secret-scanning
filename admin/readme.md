@@ -24,6 +24,7 @@ For this workshop, we:
 ## Pre-Workshop
 
 - Establish infrastructure; update config files if necessary (`/bin/config`).
+- If applicable, update [Recent breaches](../ex-01/readme.md#some-recent-examples) section in ex-01 with the latest incidents
 - 2-3 weeks ahead:
   - Schedule time in the calendar, add a virtual meeting if needed.
   - Announce the workshop. Include:
@@ -39,6 +40,7 @@ For this workshop, we:
 - 1 week ahead:
   - Close sign-up (if needed).
   - Add participants to the calendar invite.
+  - Remind participants about getting access to the necessary GitHub organization(s) (if needed)
 - 1 week after:
   - Issue an email to participants, reminding them to clean up, sharing links to guidelines.
 
@@ -46,6 +48,15 @@ For this workshop, we:
 
 - Introduce yourself!
 - Using "raising hands" works well as a tool for progress management.
+- If unsure of the audience, a tip is to use a poll before starting. E.g.
+  - Are you familiar with using terminal?
+  - Are you familiar with Docker?
+  - Are you using GitHub Actions?
+  - ...
+- Also using a wordcloud can be beneficial to get insights to your audience
+  - What IDE do you use?
+  - What is your technology stack?
+  - ...
 - For the 3-hour version, we take breaks on the hour (10 and 5 minutes).
 - Collecting feedback using polls or similar can be a good idea.
 
