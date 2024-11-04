@@ -17,6 +17,7 @@ Stats from ([GitGuardian, Report on Secrets Sprawl 2024](https://www.gitguardian
 ## Some recent examples
 
 - Rabbit Inc., 2024, hard-coded secrets allowing unauthorized access to personal data and control over R1 devices ([link](https://www.doppler.com/blog/updated-data-breaches-caused-by-leaks-in-2024))
+- Security Researches, 2024, found hardcoded credentials in popular Android and IOS applications [link](https://www.theregister.com/2024/10/23/android_ios_security/)
 - Mercedes-Benz, 2024, mistakenly published GitHub token exposed Mercedes-Benz source code ([link](https://techcrunch.com/2024/01/26/mercedez-benz-token-exposed-source-code-github/))
 - Meta AI, late 2023, AI models cracked open with exposed API tokens (GitHub, Hugging Face) ([link](https://www.darkreading.com/vulnerabilities-threats/meta-ai-models-cracked-open-exposed-api-tokens))
 - Verizon 2023 DBIR (Data Breaches Investigation Report), 16.3k incidents examined, 74% involves human element, 86% of basic web attacks involves stolen credentials ([link](https://www.verizon.com/business/resources/reports/dbir/))
