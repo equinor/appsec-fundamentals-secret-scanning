@@ -12,6 +12,7 @@ Now that we have a better idea on risks we hopefully can make better and more in
 - Storing secrets in `.env` files
 - Storing secrets in secret management tools (like Azure Key Vault)
 - Injecting secrets into environment variables
+- Reduce number of secrets by e.g. using Managed Identities and Federated Credentials
 
 ## A few *known* controls could be
 
