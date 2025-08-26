@@ -1,5 +1,7 @@
 # Appsec Fundamentals Secret Scanning
 
+## The workshop will not be continued in it's current form. We introduce GHAS and secret scanning. We may consider an new agumented workshop later, focusing on general usage and perhaps container scanning etc.
+
 [![License](https://shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](/CONTRIBUTING.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) 
